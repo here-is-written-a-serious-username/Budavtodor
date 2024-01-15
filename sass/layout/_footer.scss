@@ -1,0 +1,121 @@
+.footer {
+    color: $secondary-color;
+    padding: 48px 0;
+    background-color: $background-dark;
+}
+
+.footer-cont {
+
+    @media screen and (max-width: 767px) {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1230px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+}
+
+.logo-footer {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+        display: block;
+    }
+}
+
+.footer-title {
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 1229px) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        font-size: 28px;
+    }
+}
+
+.contact-cont {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 18px;
+    }
+}
+
+
+.contact-list__item {
+    @media screen and (max-width: 1229px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        font-size: 18px;
+    }
+
+    &+& {
+        margin-top: 18px;
+    }
+}
+
+
+.contact-list__contact,
+.location-title {
+    transition: color linear 250ms;
+
+    .contact-list__icon,
+    .location__icon {
+        fill: currentColor;
+    }
+
+    &:hover,
+    :focus {
+        color: $accent-color;
+    }
+}
+
+.contact-list__icon,
+.location__icon {
+    margin-right: 8px;
+    fill: $secondary-color;
+}
+
+.location-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location-title {
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 18px;
+
+    @media screen and (max-width: 1229px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        font-size: 18px;
+    }
+}
+
+.footer-map {
+    @media screen and (max-width: 1229px) {
+        width: 200px;
+        height: 150px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        width: 300px;
+        height: 225px;
+    }
+}
