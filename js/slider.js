@@ -1,5 +1,3 @@
-
-
 const sliderElm = document.querySelector('.splide');
 const SLIDE_SPEED = 400;
 const slider = new Splide(sliderElm, {
